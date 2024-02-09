@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  proxy:
+    build:
+      context: .
+    ports:
+      - "8084:3128"
+    environment:
+      PROXY_USER: testuser
+      PROXY_PASSWORD: testpass
